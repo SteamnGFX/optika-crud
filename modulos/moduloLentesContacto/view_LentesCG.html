@@ -1,0 +1,28 @@
+<!-- Modulo de lentes de Contacto con Graduacion -->
+<div class="card col-lg-2 mx-3 my-2 mt-3 sombra" style="background-color: #BCD7DB;">
+    <center>
+        <div>
+            <img src="../recursos/LogoQT.png" style="width: 9em; height: 9em;">
+        </div>
+        <div class="py-4 px-2 row w-100">
+            <button id="btnCatalogo" class="btn btn-primary my-2 w-100" onclick="moduloLentesCG.cargarModuloCatalogoLentesCG()"><img src="../recursos/menu/user.png" style="height: 1.5em; margin-right: .5em;"> Catálogo</button>
+            <button id="btnAgregar" class="btn btn-light my-2 w-100"  onclick="moduloLentesCG.cargarModuloRegistroLentesCG()"><img src="../recursos/menu/plus.png" style="height: 1.5em; margin-right: .5em;"> Agregar</button>
+            <button id="btnModificar" class="btn btn-light my-2 disabled w-100" onclick="moduloLentesCG.cargarModuloModificarLentesCG()"><img src="../recursos/menu/edit.png" style="height: 1.5em; margin-right: .5em;"> Modificar</button>
+            <button id="btnEliminar" class="btn btn-light my-2 disabled w-100" onclick="moduloLentesCG.elimimarLenteCG()"><img src="../recursos/menu/trash.png" style="height: 1.5em; margin-right: .5em;"> Eliminar</button>
+            <div class="py-4 px-2 w-100 mt-3" style="border-radius: 10px; background-color: #BCD7DB; border: 2px; border-style: solid; border-color: #3C727A">
+                <p style="font-family: Verdana; font-size: 15px"><b>Tipo de lente</b></p>
+                <label>
+                    <input id="chEsteticos" class="form-check-input" type="radio" onclick="cargarModuloLentesDeContactoCE(), moduloLentesCE.cargarModuloCatalogoLentesCE();" value="1"> Estéticos
+                </label>
+                <label>
+                    <input id="chGraduacion" class="form-check-input" type="radio" onclick="cargarModuloLentesDeContactoCG(), moduloLentesCG.cargarModuloCatalogoLentesCG();" value="2" checked disabled> Graduación
+                </label>
+            </div>
+        </div>
+    </center>
+</div>
+
+<div class="card col-lg-9  p-3 mx-3 my-2 mt-3 sombra" id="contenedor-modulo">
+
+</div>
+

@@ -1,0 +1,92 @@
+<center>
+    <div class="card col-lg-6 m-4" style="border-color: white;">
+        <h2 class="text-center">Modificar Lentes con Graduacion</h2>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtNombre" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 32 || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/>
+                <label for="txtNombre" class="input-label">Nombre</label>
+            </div>
+            <div class="input-group m-2">
+                <input  id="txtFoto" type="file" class="input">
+                <label for="txtFoto" class="input-label">Foto</label>
+            </div>
+        </div>
+
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input  id="txtColor" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 32 || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/>
+                <label for="txtColor" class="input-label">Color</label>
+            </div>
+            <div class="input-group m-2">
+                <input  id="txtMarca" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 32 || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/>
+                <label for="txtMarca" class="input-label">Marca</label>
+            </div>
+        </div>
+
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input  id="txtEsferaD" type="text" class="input" required autocomplete='off' onkeypress="return event.charCode == 45 || event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" />
+                <label for="txtEsferaD" class="input-label">Esfera D</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtEsferaI" type="text" class="input" required autocomplete='off' onkeypress="return event.charCode == 45 || event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" />
+                <label for="txtEsferaI" class="input-label">Esfera I</label>
+            </div>
+        </div>
+
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input  id="txtCilindroD" type="text" class="input" required autocomplete='off' onkeypress="return event.charCode == 45 || event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" />
+                <label for="txtCilindroD" class="input-label">Cilindro D</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtCilindroI" type="text" class="input" required autocomplete='off' onkeypress="return event.charCode == 45 || event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57)" />
+                <label for="txtCilindroI" class="input-label">Cilindro I</label>
+            </div>
+        </div>
+
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input  id="txtEjeD" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" />
+                <label for="txtEjeD" class="input-label">Eje D</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtEjeI" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" />
+                <label for="txtEjeI" class="input-label">Eje I</label>
+            </div>
+        </div>
+
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input  id="txtDistanciaD" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 45 || event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"  />
+                <label for="txtDistanciaD" class="input-label">Distancia interpupilar D</label>
+            </div>
+            <div class="input-group m-2">
+                <input  id="txtDistanciaI" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 45 || event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"  />
+                <label for="txtDistanciaI" class="input-label">Distancia interpupilar I</label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex" style="min-width: 100%;">
+            <div class="input-group m-2">
+                <input id="txtPrecioC" type="number" required class="input" > 
+                <label for="txtPrecioC" class="input-label">Precio de Compra</label>
+            </div> 
+            <div class="input-group m-2">
+                <input id="txtPrecioV" type="number" required class="input" maxlength="10" >
+                <label for="txtPrecioV" class="input-label">Precio de venta</label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input  id="txtQueratometria" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 45 || event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"  />
+                <label for="txtQueratometria" class="input-label">Queratometria</label>
+            </div>
+        </div>
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloLentesCG.cleanQuestion();" id="btnClean"><img src="../recursos/menu/clear.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Limpiar</button>
+            <button class="mt-2 btn btn-warning btn-lg" onclick="moduloLentesCG.actualizarLenteCG();"  style="margin-left: 40px;" id="btnUpdate"><img src="../recursos/menu/refresh.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Actualizar</button>
+            <button class="mt-2 btn btn-danger btn-lg" onclick="moduloLentesCG.elimimarLenteCG();"  style="margin-left: 40px;" id="btnDelete"><img src="../recursos/menu/trash.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Eliminar</button>
+        </div>
+
+    </div>
+</center>

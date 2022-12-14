@@ -1,0 +1,75 @@
+<center>
+    <div class="card col-lg-6 m-4" style="border-color: white;">
+        <div class="col-lg-12 d-flex d-none">
+            <div class="input-group m-2">
+                <input id="txtIdLenteEstetico" type="text" class="input" required autocomplete='off'>
+                <label for="txtIdLenteEstetico" class="input-label">idLenteContactoEstetico</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtIdProducto" type="text" class="input" required autocomplete='off'>
+                <label for="txtidProducto" class="input-label">idProducto</label>
+            </div>
+        </div>
+        <h2 class="text-center pb5">Gestión de Lentes Estéticos</h2>
+        
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtNombreE" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 239 || event.charCode == 32 || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/>
+                <label for="txtNombreE" class="input-label">Nombre</label>
+            </div>
+        </div>
+
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtColorE" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/>
+                <label for="txtColorE" class="input-label">Color</label>
+            </div>
+            <div class="input-group m-2">
+                <input  id="txtMarcaE" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"/>
+                <label for="txtMarcaE" class="input-label">Marca</label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex" style="min-width: 100%;">
+            <div class="input-group m-2">
+                <input id="txtPrecioCE" type="number" required class="input" > 
+                <label for="txtPrecioC" class="input-label">Precio de Compra</label>
+            </div> 
+            <div class="input-group m-2">
+                <input id="txtPrecioVE" type="number" required class="input" maxlength="10" >
+                <label for="txtPrecioVE" class="input-label">Precio de venta</label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input  id="txtQueratometriaE" type="text" class="input" autocomplete='off' required onkeypress="return (event.charCode == 45 || event.charCode == 46 || (event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))"  />
+                <label for="txtQueratometriaE" class="input-label">Queratometria</label>
+            </div>
+            <div class="input-group m-2">
+                <input  id="txtExistenciaE" type="number" class="input" autocomplete='off' required=""/>
+                <label for="txtExistenciaE" class="input-label">Existencias</label>
+            </div>
+        </div>
+        <!--- FOTOS -->
+        <div class="col-lg-12 d-flex">
+            <!--FOTO DE LENTE-->
+            <div class="input-group m-2">
+                <input class="d-none input" id="inputFileImageLenteContactoEstetico" type="file">
+                <button class="w-100 btn btn-primary" style="border-radius: 10px" onclick="moduloLentesCE.showImageInputDialogLentesCE()">                 
+                    <img src="../recursos/uploadIcon.png" style="height: 32px; width: 32px">
+                    Subir Foto
+                </button>
+                <label for="txtFoto" class="input-label">Foto</label>
+                <textarea id="txtaBase64LenteCE" class="col-12 d-none"></textarea>
+
+                <div class="input-group m-2 ">
+                    <img id="imgFotoLenteCE" class="rounded mx-auto d-block" src="../recursos/defaultImage.png" style="width: 156px; height: 156px">
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-primary btn-lg" onclick="moduloLentesCE.saveLE()" id="btnAdd" style="color: black;"><img src="../recursos/menu/plus.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Registrar</button>
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloLentesCE.cleanQuestionE()" id="btnClean"><img src="../recursos/menu/eraser.svg" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Limpiar</button>
+
+        </div>
+    </div>
+</center>

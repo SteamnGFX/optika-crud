@@ -1,0 +1,62 @@
+[    
+    {
+        "nombre":"",
+        "marca":"",
+        "color":"",
+        "queratometria":"",
+        "precioC": "",
+        "precioV": "",
+        "foto":"",
+        "estatus":""
+    },
+    {
+        "nombre":"Lente Sin Graduación",
+        "marca":"Qualite",
+        "precioC": "$300",
+        "precioV": "$450",
+        "color":"Rosa",
+        "queratometria":"7.85mm",
+        "foto":"foto",
+        "estatus":"Activo"
+    },
+    {
+        "nombre":"Lentilla",
+        "marca":"Qualite",
+        "precioC": "$350",
+        "precioV": "$500",
+        "color":"Verde",
+        "queratometria":"7.35mm",
+        "foto":"foto",
+        "estatus":"Activo"
+    },
+    {
+        "nombre":"Lente",
+        "marca":"Qualite",
+        "precioC": "$800",
+        "precioV": "$1200",
+        "color":"Azul",
+        "queratometria":"8.00mm",
+        "foto":"foto",
+        "estatus":"Activo"
+    },
+    {
+        "nombre":"Lentilla estética",
+        "marca":"Qualite",
+        "precioC": "$290",
+        "precioV": "$385",
+        "color":"Morado",
+        "queratometria":"7.00mm",
+        "foto":"foto",
+        "estatus":"Activo"
+    },
+     {
+        "nombre":"Lente estético",
+        "marca":"Qualite",
+        "precioC": "$200",
+        "precioV": "$315",
+        "color":"cafe",
+        "queratometria":"6.50mm",
+        "foto":"foto",
+        "estatus":"Activo"
+    }
+]

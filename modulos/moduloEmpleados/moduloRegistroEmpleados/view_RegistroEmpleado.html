@@ -1,0 +1,136 @@
+<!-- En los metodos ONCLICK es importante LEER el comentario de modulos.js -->
+<center>
+    <div class="card col-lg-6 m-4" style="border-color: white;">
+        <div class="col-lg-12 d-flex d-none">
+            <div class="input-group m-2">
+                <input id="txtIdEmpleado" type="text" class="input" required autocomplete='off'>
+                <label for="txtIdEmpleado" class="input-label">idEmpleado</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtIdPersona" type="text" class="input" required autocomplete='off'>
+                <label for="txtIdPersona" class="input-label">idPersona</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtIdUsuario" type="text" class="input" required autocomplete='off'>
+                <label for="txtIdUsuario" class="input-label">idUsuario</label>
+            </div>
+        </div>
+        <h2 class="text-center pb-5">Registro de Empleado</h2>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input class="input" id="txtNumUnico" type="text" disabled style="background-color: #ECECEC;" >
+                <label for="txtNumUnico" class="input-label">N.° Unico Empleado</label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtNombre" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 32 || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtNombre" class="input-label">Nombre(s) <span style="color:red">*</span></label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtApePaterno" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 32 || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtApePaterno" class="input-label">Apellido Paterno <span style="color:red">*</span></label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtApeMaterno" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 32 || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtApeMaterno" class="input-label">Apellido Materno <span style="color:red">*</span></label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <select class="input" style="width: 100%;" id="txtGenero" name="txtGenero">
+                    <option value="H">Masculino</option>
+                    <option value="M">Femenino</option>
+                    <option value="X">Otro</option>
+                </select>
+                <label class="input-label">Género <span style="color:red">*</span></label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtFechaNacimiento" type="text" class="input" style="height: 45px;" required maxlength="13" autocomplete='off' onkeypress="return (event.charCode == 47 || (event.charCode >= 48 && event.charCode <= 57))" >
+                <label for="txtFechaNacimiento" class="input-label">Fecha Nacimiento <span style="color:red">*</span></label>                
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtRfc" type="text" class="input" required maxlength="13" autocomplete='off' onkeypress="return (event.charCode == 209 || event.charCode == 241 ||(event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtRfc" class="input-label">RFC <span style="color:red">*</span></label>                
+            </div>
+        </div>
+        
+        
+        
+        <div class="col-lg-12 d-flex mt-3">
+            <div class="input-group m-2">
+                <input id="txtCalle" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 32 || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtCalle" class="input-label">Calle <span style="color:red">*</span></label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtNumeroCalle" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                <label for="txtNumeroCalle" class="input-label">Número <span style="color:red">*</span></label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtColonia" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 32 || event.charCode == 209 || event.charCode == 241 ||  event.charCode == 32 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtColonia" class="input-label">Colonia <span style="color:red">*</span></label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtCP" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                <label for="txtCP" class="input-label">Código Postal <span style="color:red">*</span></label>
+            </div>
+        </div>
+        
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtCiudad" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 32 || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtCiudad" class="input-label">Ciudad <span style="color:red">*</span></label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtEstado" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 32 || event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtEstado" class="input-label">Estado <span style="color:red">*</span></label>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-12 d-flex mt-3">
+
+            <div class="input-group m-2">
+                <input id="txtTelefono" type="text"  class="input" required maxlength="10" autocomplete='off' onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                <label for="txtTelefono" class="input-label">Teléfono Fijo</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtMovil" type="text" class="input" required maxlength="10" autocomplete='off' onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                <label for="txtMovil" class="input-label">Teléfono Móvil <span style="color:red">*</span></label>
+            </div>
+
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtCorreo" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 46 || event.charCode == 209 || event.charCode == 241 || event.charCode == 64 || (event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtCorreo" class="input-label">Correo Electrónico <span style="color:red">*</span></label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+
+
+            <div class="input-group m-2">
+                <input id="txtUsuario" type="text"  class="input" required autocomplete='off' onkeypress="return ((event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtUsuario" class="input-label">Usuario <span style="color:red">*</span></label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtPassword" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 95 || event.charCode == 47 || event.charCode == 13 || event.charCode == 45 || event.charCode == 36 || (event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtPassword" class="input-label">Contraseña <span style="color:red">*</span></label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtRol" type="text" class="input" required autocomplete='off' onkeypress="return (event.charCode == 95 || event.charCode == 47 || event.charCode == 13 || event.charCode == 45 || event.charCode == 36 || (event.charCode >= 48 && event.charCode <= 57) || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtRol" class="input-label">Rol <span style="color:red">*</span></label>
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-primary btn-lg" style="margin-right: 50px;" onclick="moduloEmpleado.save();" id="btnAdd"><img src="../recursos/menu/plus.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Registrar</button>
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloEmpleado.cleanQuestion();" id="btnClean"><img src="../recursos/menu/eraser.svg" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Limpiar</button>
+        </div>
+    </div>
+</center>
