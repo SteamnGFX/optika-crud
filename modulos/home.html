@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="canonical" href="http://localhost:8080/PGOpticaCualiteCompartido2/"/>
+        <title>Óptica Qualite | Inicio </title>
+        <link rel="icon" href="../recursos/Logo_Fondo_Transparente.png">
+        <!-- JQUERY -->
+        <script src="../JS/jquery.min.js"></script>
+        <!-- ESTILOS -->
+        <link rel="stylesheet" type="text/css" href="../styles/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../styles/cssMain/datatables.min.css"/>
+        <link rel="stylesheet" type="text/css" href="../styles/cssMain/Style.css"/>
+        <!-- DESARROLLADO POR -->
+        <meta name="author" content="Componentes Unidos">
+
+        <!-- FECHA -->
+        <meta name="date" content="27/06/2022">
+
+        <!-- COPYRIGHT POR -->
+        <meta name="copyright" content="2022-20223">
+
+        <!-- GRUPO POR -->
+        <meta name="group" content="DSM302">
+
+    </head>
+
+    <!--  NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark sombra" style="background-color: #619aa2;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-dark" href="#"><img src="../recursos/Logo_Fondo_Transparente.png" alt="" width="40"/></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a id="navbar-home" class="nav-link active" style="margin-top: 3px; font-weight: bold;" href="" onclick="cargarHome()">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="navbar-productos" class="nav-link dropdown-toggle" style="border-style: solid; border-color: #619aa2;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a id="navbar-lentesDeContacto" class="dropdown-item" href="#LentesDeContacto" onclick="cargarModuloLentesDeContactoCE()">Lentes de Contacto</a></li>
+                            <li><a id="navbar-armazones" class="dropdown-item" href="#Armazones" onclick="cargarModuloArmazon()">Armazones</a></li> 
+                            <li><a id="navbar-soluciones" class="dropdown-item" href="#Soluciones" onclick="cargarModuloSoluciones()">Soluciones</a></li>
+                            <li><a id="navbar-accesorios" class="dropdown-item" href="#Armazones" onclick="cargarModuloAccesorios()">Accesorios</a></li> 
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="navbar-servicios" class="nav-link dropdown-toggle" style="border-style: solid; border-color: #619aa2;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a id="navbar-examenVista" class="dropdown-item" href="#ExamenDeLaVista"  onclick="cargarModuloExamen()">Examen de la vista</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navbar-ventas" class="nav-link" style="margin-top: 3px;" href="#Ventas" tabindex="-1" aria-disabled="true" onclick="">Ventas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navbar-pagos" class="nav-link" style="margin-top: 3px;" href="#Pagos" tabindex="-1" aria-disabled="true" onclick="">Pagos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navbar-bitacora" class="nav-link" style="margin-top: 3px;" href="#Bitacora" tabindex="-1" aria-disabled="true" onclick="">Bitacora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navbar-empleados" class="nav-link" style="margin-top: 3px;" href="#Empleados" tabindex="-1" aria-disabled="true" onclick="cargarModuloEmpleados()">Empleados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="navbar-clientes" class="nav-link" style="margin-top: 3px;" href="#Clientes" tabindex="-1" aria-disabled="true" onclick="cargarModuloClientes()">Clientes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a id="navbar-otros" class="nav-link dropdown-toggle" style="border-style: solid; border-color: #619aa2;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Otros
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a id="navbar-tratamientos" class="dropdown-item" href="#LentesDeContacto" onclick="cargarModuloTratamientos()">Tratamientos</a></li>
+                            <li><a id="navbar-materiales" class="dropdown-item" href="#Materiales" onclick="cargarModuloMateriales()">Materiales</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+                <!-- LOADSCREEN -->
+                <li class="nav-item dropdown d-flex">
+                    <a id="loggin-id" class="dropdown-toggle btn btn-outline-light aling-content-right w-100" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="../recursos/menu/user.png" style="height: 1.5em; margin-right: .5em;">User Logged
+                    </a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid row" id="contenedorPrincipal" style=" max-height: 650px;">
+        <div class="d-flex justify-content-center">
+            <img class="logo img-fluid" src="../recursos/LogoQT.png" alt="Logo QUALITE"/>
+        </div>
+        <!-- PANTALLA DE CARGA -->
+        <div class="spinner-wrapper">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+
+            </div>
+        </div>
+    </div>
+    <!-- PANTALLA DE CARGA -->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="../styles/js/bootstrap.bundle.js"></script>
+    <script src="../JS/loadingHome.js"></script>
+    <script src="../JS/sweetalert2.all.min.js"></script>
+    <script src="../JS/modulos.js"></script>
+    <script src="../JS/sha.js"></script>
+    <script src="../JS/datatables.min.js"></script>
+
+</html>

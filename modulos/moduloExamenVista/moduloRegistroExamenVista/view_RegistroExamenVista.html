@@ -1,0 +1,68 @@
+<center>
+    <div class="card col-lg-8 m-4 p-4" style="border-color: white;">
+        <h2 class="text-center">Registrar Examenes de la vista</h2>
+        <div class="col-lg-12 d-flex row">
+            <div class="col-lg-6 d-flex">
+                <label for="dteFecha" class="col-lg-4 text-center">Fecha:</label>
+                <input id="detFecha" type="Date"  class="mt-2">
+            </div>
+            <div class="col-lg-6 d-flex ">
+                <label for="txtEjeD" class="col-lg-4 text-center">Eje D:</label>
+                <input id="txtEjeD" type="text"  class="mt-2">
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex row">
+           <div class="col-lg-6 d-flex">
+                <label for="txtHora" class="col-lg-4 text-center">Hora:</label>
+                <input id="txtHora" type="text"  class="mt-2" disabled>
+            </div>
+            <div class="col-lg-6 d-flex">
+                <label for="txtEsferaI" class="col-lg-4 text-center">Esfera I:</label>
+                <input id="txtEsferaI" type="text"  class="mt-2">
+            </div> 
+        </div>    
+        <div class="col-lg-12 d-flex row">
+            <div class="col-lg-6 d-flex">
+                <label for="txtClave" class="col-lg-4 text-center">Clave cliente</label><br>
+                <input id="txtClave" type="text"  class="mt-2" maxlength="13">
+            </div>
+            <div class="col-lg-6 d-flex">
+                <label for="txtCilindroI" class="col-lg-4 text-center">Cilindro I:</label>
+                <input id="txtCilindroI" type="text"  class="mt-2" maxlength="10">
+            </div>
+            
+        </div>    
+        <div class="col-lg-12 d-flex row">
+            <div class="col-lg-6 d-flex">
+                <label for="txtEsferaD" class="col-lg-4 text-center">Esfera D:</label>
+                <input id="txtEsferaD" type="text"  class="mt-2" maxlength="10">
+            </div>
+            <div class="col-lg-6 d-flex">
+                <label for="txtDistanciaI" class="col-lg-4 text-center">Distancia I:</label>
+                <input id="txtDistanciaI" type="text"  class="mt-2">
+            </div>
+        </div>    
+        <div class="col-lg-12 d-flex row">
+            <div class="col-lg-6 d-flex">
+                <label for="txtCilindroD" class="col-lg-4 text-center">Cilindro D:</label>
+                <input id="txtCilindroD" type="text"  class="mt-2">
+            </div>
+            <div class="col-lg-6 d-flex">
+                <label for="txtEjeI" class="col-lg-4 text-center">Eje I:</label>
+                <input id="txtEjeI" type="text"  class="mt-2">
+            </div>
+        </div>    
+        <div class="col-lg-12 d-flex row">
+            <div class="col-lg-6 d-flex">
+                <label for="txtDistanciaD" class="col-lg-4 text-center">Distancia D:</label>
+                <input id="txtDistanciaD" type="text"  class="mt-2">
+            </div>
+        </div>    
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-primary btn-lg" onclick="moduloExamenVista.agregarExamen();" id="btnAdd"><img src="../recursos/menu/plus.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Registrar</button>
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloExamenVista.clean();" id="btnClean"><img src="../recursos/menu/eraser.svg" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Limpiar</button>
+
+        </div>
+    </div>
+</center>

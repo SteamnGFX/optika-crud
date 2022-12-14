@@ -1,0 +1,30 @@
+[    
+    {
+        "id": "1", 
+        "fecha": "26-07-2022", 
+        "hora" : "18:00", 
+        "clave_Cliente" : "123456", 
+        "esferaD" : "1", 
+        "esferaI" : "1-2", 
+        "cilindroI" : "2-3", 
+        "cilindroD" : "2-3", 
+        "ejeD" : "2-1",
+        "ejeI" : "2-1",
+        "distanciaD" : "1-4",
+        "distanciaI" : "1-4"
+    },
+    {
+        "id": "2", 
+        "fecha": "09-07-2022", 
+        "hora" : "12:00", 
+        "clave_Cliente" : "88632", 
+        "esferaD" : "2", 
+        "esferaI" : "2-3", 
+        "cilindroI" : "4-1", 
+        "cilindroD" : "4-1", 
+        "ejeD" : "2-3",
+        "ejeI" : "2-3",
+        "distanciaD" : "1-4",
+        "distanciaI" : "1-4"
+    }
+]

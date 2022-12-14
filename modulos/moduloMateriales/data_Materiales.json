@@ -1,0 +1,45 @@
+[    
+    {
+        "nombre": "",
+        "numeroUnicoMaterial" : "",
+        "precio_c": "",  
+        "precio_v": "", 
+        "estatus": ""
+    },
+    {
+        "nombre": "Plastico",
+        "numeroUnicoMaterial" : "OQMPlastico",
+        "precio_c": "$500",  
+        "precio_v": "$900", 
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Metal", 
+        "numeroUnicoMaterial" : "OQMMetal",
+        "precio_c": "$500",  
+        "precio_v": "$700", 
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Aluminio", 
+        "numeroUnicoMaterial" : "OQMAluminio",
+        "precio_c": "$200",  
+        "precio_v": "$400", 
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Carbono", 
+        "numeroUnicoMaterial" : "OQMCarbono",
+        "precio_c": "$300",  
+        "precio_v": "$500", 
+        "estatus": "Inactivo"
+    },
+    {
+        "nombre": "Fibra de Vidrio", 
+        "numeroUnicoMaterial" : "OQMFibra",
+        "precio_c": "$150",  
+        "precio_v": "$300", 
+        "estatus": "Activo"
+    }
+
+]

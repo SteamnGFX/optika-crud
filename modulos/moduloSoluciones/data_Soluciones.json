@@ -1,0 +1,59 @@
+[    
+    {
+        "nombre": "", 
+        "marca": "", 
+        "precio_c" : "",  
+        "precio_v" : "", 
+        "descripcion" : "",
+        "existencias" : "",
+        "estatus": ""
+    },
+    {
+        "nombre": "Limpiador", 
+        "marca": "Qualite", 
+        "precio_c" : "$100",  
+        "precio_v" : "$200", 
+        "descripcion" : "limpia lentes y pulimiento",
+        "existencias" : "50 pz",
+        "estatus": "Activo"
+    },
+    {
+       "nombre": "Aceite", 
+        "marca": "Qualite", 
+        "precio_c" : "$50",  
+        "precio_v" : "$100", 
+        "descripcion" : "Lubricación de armazón",
+        "existencias" : "20 pz",
+        "estatus": "Activo"
+    },
+    {
+         "nombre": "Gotas", 
+        "marca": "Qualite", 
+        "dimensiones" : "5 ml", 
+        "precio_c" : "$150",  
+        "precio_v" : "$300", 
+        "descripcion" : "Gotas para ojos",
+        "existencias" : "10 pz",
+        "estatus": "Activo"
+    },
+    {
+         "nombre": "Antipaño", 
+        "marca": "Qualite", 
+        "dimensiones" : " 50 ml", 
+        "precio_c" : "$100",  
+        "precio_v" : "$200", 
+        "descripcion" : "Solución anti empaño para lentes",
+        "existencias" : "10 pz",
+        "estatus": "Activo"
+    },
+    {
+         "nombre": "Brillo", 
+        "marca": "Qualite", 
+        "dimensiones" : "15 ml", 
+        "precio_c" : "$50",  
+        "precio_v" : "$100", 
+        "descripcion" : "Brillo para renovar armazón",
+        "existencias" : "6 pz",
+        "estatus": "Activo"
+    }
+]

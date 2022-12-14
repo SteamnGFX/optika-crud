@@ -1,0 +1,80 @@
+[    
+    {
+    "nombre":"",
+    "precio_c":"",
+    "marca":"",
+    "precio_v":"",
+    "modelo":"",
+    "existencias": "",
+    "color":"",
+    "dimensiones":"",
+    "descripcion":"",
+    "codBarras":"",
+    "estatus":""
+    },
+    {
+    "nombre":"A1",
+    "precio_c":"$123",
+    "marca":"Hugo Boss",
+    "precio_v":"$125",
+    "modelo":"M1",
+    "existencias":20,
+    "color":"Verde",
+    "dimensiones":"21x21",
+    "descripcion":"Lentes de Aluminio Color Verde",
+    "codBarras":"OQ-20835",
+    "estatus":"Activo"
+    },
+    {
+    "nombre":"A2",
+    "precio_c":"$100",
+    "marca":"Ray Band",
+    "precio_v":"$150",
+    "modelo":"M2",
+    "existencias":20,
+    "color":"Azul",
+    "dimensiones":"21x21",
+    "descripcion":"Lentes de Plastico Color Azul",
+    "codBarras":"OQ-12414",
+    "estatus":"Activo"
+    },
+    {
+    "nombre":"A3",
+    "precio_c":"$123",
+    "marca":"Lacoste",
+    "precio_v":"$125",
+    "modelo":"M3",
+    "existencias":20,
+    "color":"Rojo",
+    "dimensiones":"21x21",
+    "descripcion":"Armazon Rojo Metalico",
+    "codBarras":"OQ-32894",
+    "estatus":"Activo"
+    },
+    {
+    "nombre":"A4",
+    "precio_c":"$200",
+    "marca":"Hugo Boss",
+    "precio_v":"$225",
+    "modelo":"M4",
+    "existencias":20,
+    "color":"Gris",
+    "dimensiones":"21x21",
+    "descripcion":"Armazon Gris Oscuro con Forma Cuadrada",
+    "codBarras":"OQ-25489",
+    "estatus":"Activo"
+    },
+    {
+    "nombre":"A5",
+    "precio_c":"$800",
+    "marca":"Versage",
+    "precio_v":"$1000",
+    "modelo":"M5",
+    "existencias":20,
+    "color":"Dorado",
+    "dimensiones":"21x21",
+    "codBarras":"OQ-35789",
+    "descripcion":"Armazon Dorado de Aluminio",
+    "estatus":"Activo"
+    }
+]

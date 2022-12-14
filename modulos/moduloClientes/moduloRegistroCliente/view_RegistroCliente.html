@@ -1,0 +1,117 @@
+<center>
+    <div class="card col-lg-10 m-4" style="border-color: white;">
+        <div class="col-lg-12 d-flex d-none">
+            <div class="input-group m-2">
+                <input id="txtIdCliente" type="text" class="input" required autocomplete='off'>
+                <label for="txtIdCliente" class="input-label">idCliente</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtIdPersona" type="text" class="input" required autocomplete='off'>
+                <label for="txtIdPersona" class="input-label">idPersona</label>
+            </div>            
+        </div>
+        <h2 class="text-center pb-5">Registro de Cliente</h2>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input class="input" id="txtNumUnico" type="text" disabled style="background-color: #ECECEC;" >
+                <label for="txtNumUnico" class="input-label">N.° Unico Cliente</label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtNombre" type="text" class="input" required autocomplete='off'>
+                <label for="txtNombre" class="input-label">Nombre(s)</label>
+            </div>            
+        </div>
+        <div class="col-lg-12 d-flex">
+            
+            <div class="input-group m-2">
+                <input id="txtApePaterno" type="text" class="input" required autocomplete='off'>
+                <label for="txtApePaterno" class="input-label">Apellido Paterno</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtApeMaterno" type="text" class="input" required autocomplete='off' >
+                <label for="txtApeMaterno" class="input-label">Apellido Materno</label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <select class="input" style="width: 100%;" id="txtGenero" name="txtGenero">
+                    <option value="H">Masculino</option>
+                    <option value="M">Femenino</option>
+                    <option value="X">Otro</option>
+                </select>
+                <label class="input-label">Género:</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtFechaNacimiento" type="text" class="input" style="height: 45px;" required maxlength="13" autocomplete='off' onkeypress="return (event.charCode == 47 || (event.charCode >= 48 && event.charCode <= 57))" >
+                <label for="txtFechaNacimiento" class="input-label">Fecha Nacimiento</label>                
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtRfc" type="text" class="input" required maxlength="13" autocomplete='off' >
+                <label for="txtRfc" class="input-label">RFC</label>                
+            </div>
+        </div>
+        
+        
+        
+        <div class="col-lg-12 d-flex mt-3">
+            <div class="input-group m-2">
+                <input id="txtCalle" type="text" class="input" required autocomplete='off' >
+                <label for="txtCalle" class="input-label">Calle</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtNumeroCalle" type="text" class="input" required autocomplete='off' >
+                <label for="txtNumeroCalle" class="input-label">Número</label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtColonia" type="text" class="input" required autocomplete='off' >
+                <label for="txtColonia" class="input-label">Colonia</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtCp" type="text" class="input" required autocomplete='off' >
+                <label for="txtCp" class="input-label">Código Postal</label>
+            </div>
+        </div>
+        
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtCiudad" type="text" class="input" required autocomplete='off' >
+                <label for="txtCiudad" class="input-label">Ciudad</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtEstado" type="text" class="input" required autocomplete='off' >
+                <label for="txtEstado" class="input-label">Estado</label>
+            </div>
+        </div>
+        
+
+        <div class="col-lg-12 d-flex mt-3">
+
+            <div class="input-group m-2">
+                <input id="txtTelefono" type="text"  class="input" required maxlength="10" autocomplete='off' >
+                <label for="txtTelefono" class="input-label">Teléfono Fijo</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtMovil" type="text" class="input" required maxlength="10" autocomplete='off' >
+                <label for="txtMovil" class="input-label">Teléfono Móvil</label>
+            </div>
+
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtEmail" type="text" class="input" required autocomplete='off' >
+                <label for="txtEmail" class="input-label">Correo Electrónico</label>
+            </div>
+        </div>        
+
+        <div class="d-flex justify-content-around mt-2">
+            <button class="mt-2 btn btn-primary btn-lg" style="margin-right: 50px;" onclick="moduloCliente.save();" id="btnAdd"><img src="../recursos/menu/plus.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Registrar</button>
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloCliente.cleanQuestion();" id="btnClean"><img src="../recursos/menu/eraser.svg" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Limpiar</button>
+        </div>
+    </div>
+</center>

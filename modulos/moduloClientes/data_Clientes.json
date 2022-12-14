@@ -1,0 +1,75 @@
+[    
+    {
+        "nombre": "", 
+        "apellido_paterno": "", 
+        "apellido_materno" : "", 
+        "genero" : "", 
+        "rfc" : "", 
+        "telefono" : "", 
+        "telefono_movil" : "",
+        "correo_electronico" : "", 
+        "numero_unico_cliente" : "",
+        "estatus": ""
+    },
+    {
+        "nombre": "Juan Luis", 
+        "apellido_paterno": "Hernández", 
+        "apellido_materno" : "Sánchez", 
+        "genero" : "Masculino", 
+        "rfc" : "HSSJ2311977W1", 
+        "telefono" : "4770000123", 
+        "telefono_movil" : "4770001234",
+        "correo_electronico" : "juan_luis@gmail.com", 
+        "numero_unico_cliente" : "at3tkjw3t3i4jtiojwefjastigerojgw5ojjle2lwjrr232o2io34op2oklrkrwe",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "María del Rocío", 
+        "apellido_paterno": "Pérez", 
+        "apellido_materno" : "Ramírez", 
+        "genero" : "Femenino", 
+        "rfc" : "PERM1902866D0", 
+        "telefono" : "4777882333", 
+        "telefono_movil" : "4774456652",
+        "correo_electronico" : "ricio_maria@gmail.com", 
+        "numero_unico_cliente" : "5d097b5489a536dcbf61c21198a5e536c020ca7efa52e68fc561010ee1124d2a",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Juan Gabriel", 
+        "apellido_paterno": "Reyna", 
+        "apellido_materno" : "Martínez", 
+        "genero" : "Masculino", 
+        "rfc" : "REMJ310179HGT0", 
+        "telefono" : "4773221456", 
+        "telefono_movil" : "4775032234",
+        "correo_electronico" : "jhoan_gabriel@gmail.com", 
+        "numero_unico_cliente" : "8d097b2689a536dcbf61c21198a5e536c020ca7efa52e68fc561010ee1124d2a",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Angel Roberto", 
+        "apellido_paterno": "Martinez", 
+        "apellido_materno" : "Castro", 
+        "genero" : "Masculino", 
+        "rfc" : "", 
+        "telefono" : "X", 
+        "telefono_movil" : "4775876555",
+        "correo_electronico" : "X", 
+        "numero_unico_cliente" : "848387nf99i345h3j20302001204ubukjsndfjkwrwopekrkpwekrpopwerpui34",
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Miguel Ernesto", 
+        "apellido_paterno": "Jasso", 
+        "apellido_materno" : "Flores", 
+        "genero" : "Masculino", 
+        "rfc" : "", 
+        "telefono" : "X", 
+        "telefono_movil" : "4773213000",
+        "correo_electronico" : "X", 
+        "numero_unico_cliente" : "a38f7dh897b64h4n3k20d0b9d8s87b7n6jn6f6eywh32b5jtog0v0n8v6nm4g5e8",
+        "estatus": "Activo"
+    }
+
+]

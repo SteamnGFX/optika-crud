@@ -1,0 +1,55 @@
+<center>
+    <div class="card col-lg-6 m-4" style="border-color: white;">
+        <div class="col-lg-12 d-flex d-none">
+            <div class="input-group m-2">
+                <input id="txtIdAccesorio" type="text" class="input" required autocomplete='off'>
+                <label for="txtIdAccesorio" class="input-label">IdAccesorio</label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtIdProducto" type="text" class="input" required autocomplete='off'>
+                <label for="txtIdProducto" class="input-label">IdProducto</label>
+            </div>
+        </div>
+        <h2 class="text-center pb-5">Modificación de Accesorio</h2>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <label for="txtCodigoBarras" class="">Codigo de Barras</label>
+                <input class="input" id="txtCodigoBarras" type="text" style="background-color: #ECECEC;" disabled>
+            </div>
+        </div>
+
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtNombre" type="text"  class="input"  required autocomplete='off' onkeypress="return (event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtNombre" class="input-label ">Nombre <span style="color:red">*</span></label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtMarca" type="text"  class="input"  required autocomplete='off' onkeypress="return (event.charCode == 209 || event.charCode == 241 || (event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))">
+                <label for="txtMarca" class="input-label">Marca <span style="color:red">*</span></label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtPrecioC" type="number"  class="input" required="">
+                <label for="txtPrecioC" class="input-label">Precio de Compra <span style="color:red">*</span></label>
+            </div>
+            <div class="input-group m-2">
+                <input id="txtPrecioV" type="number"  class="input" required maxlength="10" autocomplete='off' onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                <label for="txtPrecioV" class="input-label">Precio de Venta <span style="color:red">*</span></label>
+            </div>
+        </div>
+        <div class="col-lg-12 d-flex">
+            <div class="input-group m-2">
+                <input id="txtExistencias" type="number"  class="input" required maxlength="10" autocomplete='off' onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+                <label for="txtExistencias" class="input-label">Existencias<span style="color:red">*</span></label><br>
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-around mt-5">
+            <button class="mt-2 btn btn-info btn-lg" onclick="moduloAccesorios.cleanQuestion();" id="btnClean"><img src="../recursos/menu/clear.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Limpiar</button>
+            <button class="mt-2 btn btn-warning btn-lg" onclick="moduloAccesorios.save();" id="btnUpdate"><img src="../recursos/menu/refresh.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Actualizar</button>
+            <button class="mt-2 btn btn-danger btn-lg" onclick="moduloAccesorios.deleteAccesorio();" id="btnDelete"><img src="../recursos/menu/trash.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .5em;">Eliminar</button>
+        </div>
+    </div>
+</center>

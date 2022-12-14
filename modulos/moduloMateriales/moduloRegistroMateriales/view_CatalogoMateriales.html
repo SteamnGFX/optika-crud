@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-center m3">
+    <h2>Catálogo de Materiales</h2>
+</div>
+
+<div class="d-flex justify-content-center m3  mt-3 mb-3 w-100">
+        <form action="#buscarMaterial=?123654234347" class="search">
+        <input id="txtBuscarMaterial" type="text" placeholder="Buscar material..." class="input" >
+        <button name="buscar" type="submit" class="button" onclick="moduloMateriales.searchMaterial();"><img src="../recursos/menu/search.png" class="mx-auto d-block" style="height: 1.5em; margin-right: .3em;"></button>
+    </form>             
+</div>
+<div class="table-responsive">
+    <table  id="tblMaterialHead" class="table display">
+        <thead class="table-dark">
+            <tr>
+                <th>Número Único de Material</th>
+                <th>Nombre</th>
+                <th>Precio Compra</th>
+                <th>Precio Venta</th>
+                <th>Estatus</th>
+            </tr>
+        </thead>
+        <tbody id="tblMateriales">
+        </tbody>
+
+    </table>
+
+</div>

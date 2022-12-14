@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <title>LOGIN | Óptica Qualite </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- DESARROLLADO POR -->
+        <meta name="author" content="Componentes Unidos">
+
+        <!-- FECHA -->
+        <meta name="date" content="27/06/2022">
+
+        <!-- COPYRIGHT POR -->
+        <meta name="copyright" content="2022-20223">
+
+        <!-- GRUPO POR -->
+        <meta name="group" content="DSM302">
+
+        <!-- ESTILOS -->
+        <link rel="icon" type="image/png" href="recursos/LogoQT.png" />
+        <link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="recursos/fonts/font-awesome-4.7/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="recursos/fonts/iconic/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" type="text/css" href="recursos/vendor/animate/animate.css">
+        <link rel="stylesheet" type="text/css" href="recursos/vendor/css-hamburgers/hamburgers.min.css">
+        <link rel="stylesheet" type="text/css" href="recursos/vendor/animsition/css/animsition.min.css">
+        <link rel="stylesheet" type="text/css" href="recursos/vendor/select2/select2.min.css">
+        <link rel="stylesheet" type="text/css" href="recursos/vendor/daterangepicker/daterangepicker.css">
+        <link rel="stylesheet" type="text/css" href="styles/cssMain/util.css">
+        <link rel="stylesheet" type="text/css" href="styles/cssMain/login.css">
+        <link rel="stylesheet" type="text/css" href="styles/cssMain/Style.css" />
+    </head>
+
+    <body>
+        <!-- LOGIN -->
+        <div class="limiter">
+            <div class="container-login100" style="background-image: url('recursos/bg-desenfoque20.jpg');">
+                <div class="wrap-login100">
+                    <div class="header-login">
+                        <span class="login100-form-title p-b-10 p-l-55 p-r-55 p-t-35 ">
+                            IDENTIFICATE
+                        </span>
+                        <span class="login100-form-title p-l-55 p-r-55 p-b-34">
+                            <img class=" logoLogin" src="recursos/LogoQT.png" width="240"
+                                 alt="OpticaQualite-Optica-Qualite" />
+                        </span>
+                    </div>
+                    <div class="p-l-55 p-r-55 p-t-35 p-b-34">
+                        <div class="wrap-input100 validate-input m-b-23" data-validate="El usuario es requerido!">
+                            <span class="label-input100">Usuario</span>
+                            <input id="txtUser" class="input100" type="text" name="Usuario" placeholder="Ingrese su usuario"
+                                   autocomplete="off">
+                            <span class="focus-input100" data-symbol="&#xf206"></span>
+                        </div>
+
+                        <div class="wrap-input100 validate-input" data-validate="La contraseña es requerida!">
+                            <span class="label-input100">Contraseña</span>
+                            <input id="txtPass" class="input100" type="password" name="pass"
+                                   placeholder="Ingrese su contraseña">
+                            <span class="focus-input100" data-symbol="&#xf190;"></span>
+                        </div>
+                        <div class="form-check mt-3 d-flex">
+                            <div class="col-lg-6">
+                                <input id="checkPass" class="form-check-input" type="checkbox">
+                                <label class="form-check-label label-input100">
+                                    Mostrar contraseña
+                                </label>
+                            </div>
+                            <div class="col-lg-6">
+                                <input id="checkSaveUser" class="form-check-input" type="checkbox">
+                                <label class="form-check-label label-input100">
+                                    Guardar Credenciales
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="text-right p-t-8 p-b-31">
+                            <p class="" id="passMsg"></p>
+                        </div>
+
+                        <div class="container-login100-form-btn">
+                            <div class="wrap-login100-form-btn" style="width:50%;">
+                                <div class="login100-form-bgbtn"></div>
+                                <button class="login100-form-btn" onclick="login()">
+                                    <b>
+                                        Ingresar
+                                    </b>
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="flex-c-m">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- SCRIPTS -->
+        <script src="JS/jquery.min.js"></script>
+        <script src="JS/sweetalert2.all.min.js"></script>
+        <script src="recursos/vendor/animsition/js/animsition.min.js"></script>
+        <script src="recursos/vendor/bootstrap/js/popper.js"></script>
+        <script src="recursos/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="recursos/vendor/select2/select2.min.js"></script>
+        <script src="recursos/vendor/daterangepicker/moment.min.js"></script>
+        <script src="recursos/vendor/daterangepicker/daterangepicker.js"></script>
+        <script src="recursos/vendor/countdowntime/countdowntime.js"></script>
+        <script src="JS/loadingLogin.js"></script>
+        <script>
+            console.log("%c¡DETENTE!", "font-size: 60px; color:red; text-shadow: 1px 3px 2px black;");
+            console.log("%cEsta función del navegador está pensada para desarrolladores. Si alguien te indicó que \n\
+copiaras y pegaras algo aquí para habilitar una función se trata de un fraude.\n\
+Si lo haces esta persona podría acceder a tus datos\n\
+\n\
+Consulta: https://www.cuopticaqualite.com/faq para más información", "font-size: 20px; color:white; text-shadow: 1px 3px 2px black;");
+
+        </script>
+        <!-- LA COPIA DE CONTENIDO CON DERECHOS DE AUTOR ES ILEGAL -->
+    </body>
+</html>

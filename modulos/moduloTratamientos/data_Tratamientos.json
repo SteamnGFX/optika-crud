@@ -1,0 +1,39 @@
+[    
+    {
+        "nombre": "", 
+        "precio_c": "",  
+        "precio_v": "", 
+        "estatus": ""
+    },
+    {
+        "nombre": "Antirreflejo (AR)", 
+        "precio_c": "$500",  
+        "precio_v": "$900", 
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Filtro UV", 
+        "precio_c": "$500",  
+        "precio_v": "$700", 
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Espejado", 
+        "precio_c": "$200",  
+        "precio_v": "$400", 
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Coloración", 
+        "precio_c": "$300",  
+        "precio_v": "$500", 
+        "estatus": "Inactivo"
+    },
+    {
+        "nombre": "Protección Sólar", 
+        "precio_c": "$800",  
+        "precio_v": "$1200", 
+        "estatus": "Activo"
+    }
+
+]

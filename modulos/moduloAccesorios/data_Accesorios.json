@@ -1,0 +1,50 @@
+[    
+    {
+        "nombre": "",
+        "marca": "",
+        "precio_c": "",
+        "precio_v": "",
+        "existencias": 0,
+        "estatus": ""
+    },
+    {
+        "nombre": "Cajón de Lente",
+        "marca": "Hedgehog",
+        "precio_c": "$1500",
+        "precio_v": "$1750",
+        "existencias": 20,
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Cadena para lente",
+        "marca": "MorarmorMX",
+        "precio_c": "$200",
+        "precio_v": "$250",
+        "existencias": 20,
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Paño Limpiador",
+        "marca": "Zeiss",
+        "precio_c": "$100",
+        "precio_v": "$230",
+        "existencias": 20,
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Sujetador de lente",
+        "marca": "Klassnum",
+        "precio_c": "$50",
+        "precio_v": "$110",
+        "existencias": 20,
+        "estatus": "Activo"
+    },
+    {
+        "nombre": "Protector para lente",
+        "marca": "Newkibou",
+        "precio_c": "$70",
+        "precio_v": "$159",
+        "existencias": 20,
+        "estatus": "Activo"
+    }
+]
